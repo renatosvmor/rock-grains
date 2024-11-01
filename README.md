@@ -6,9 +6,15 @@ This repository contains the dataset used in the study published in the followin
 
 ## Dataset
 
-The dataset used in this study is available in the following folder:
+The dataset used in this study is organized into the following folders. 
 
-- [dataset](./dataset)
+- [dataset/test_images](./dataset/test_images): this folder contains the test images.
+
+- [dataset/train_images](./dataset/train_images): this folder contains the training images.
+
+- [dataset/train_masks](./dataset/train_masks): this folder contains the training masks, where the file names correspond to those in the `train_images` folder. The mask files are in `.tif` format, with `1` representing **gravel grains** and `0` representing the **background**. 
+
+The file names in each folder indicate the class of the images. Images with the word `contaminated` in their name represent **images with Gravel 1 contaminated by Gravel 2**, while images with `nonContaminated` in their name represent **images containing only Gravel 1 with no contamination**.
   
 ## BibTeX Entry
 

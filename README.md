@@ -12,7 +12,7 @@ The dataset used in this study is organized into the following folders.
 
 - [dataset/train_images](./dataset/train_images): this folder contains the training images.
 
-- [dataset/train_masks](./dataset/train_masks): this folder contains the training masks, where the file names correspond to those in the `train_images` folder. Each pixel in the mask is classified as `1` for **gravel grains** and `0` for the **background**. 
+- [dataset/train_masks](./dataset/train_masks): this folder contains the annotation masks for the training images, which correspond to the training images with the same file names in the `train_images` folder. These masks delineate the grains, with each pixel classified as `1` for **gravel grains** and `0` for the **background**.
 
 The file names in each folder indicate the class of the images. Images with the word `contaminated` in their name represent **images with Gravel 1 contaminated by Gravel 2**, while images with `nonContaminated` in their name represent **images containing only Gravel 1 with no contamination**.
   
